@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<script defer src="bundle.js"></script></head>
+
+<body>
+  <div class="header">
+    <div class="sorting-reset">
+      <div class="sorting">
+        <div class="sort-title">Sort by</div>
+        <div class="sort-options">
+          <div class="by name">
+            <p>a-z</p>
+            <p class="arrow up">&uarr;</p>
+            <p class="arrow down">&darr;</p>
+          </div>
+          <div class="by year">
+            <p>year</p>
+            <p class="arrow up">&uarr;</p>
+            <p class="arrow down">&darr;</p>
+          </div>
+        </div>
+      </div>
+      <div class="resets">
+        <button id="reset-filters">Reset filters</button>
+        <button id="reset-storage">Reset session storage</button>
+      </div>
+    </div>
+    <div class="sliders">
+      <div class="count-filter-container">
+        <p>Filter by count</p>
+        <div class="count-filter"></div>
+        <div class="start-end-val">
+          <span class="example-val" id="count-formatting-start"></span>
+          <span> - </span>
+          <span class="example-val" id="count-formatting-end"></span>
+        </div>
+      </div>
+      <div class="year-filter-container">
+        <p>Filter by year</p>
+        <div class="year-filter"></div>
+        <div class="start-end-val">
+          <span class="example-val" id="year-formatting-start"></span>
+          <span> - </span>
+          <span class="example-val" id="year-formatting-end"></span>
+        </div>
+      </div>
+    </div>
+    <div id="select-filters-container">
+      <div id="producers-select">
+        <span>Filter by producer</span>
+        <label for="lrocs">R.O.C.S</label>
+        <input name="rocs" id="lrocs" type="checkbox">
+        <label for="lxiaomi">Xiaomi</label>
+        <input name="xiaomi" id="lxiaomi" type="checkbox">
+        <label for="lsplat">Splat</label>
+        <input name="splat" id="lsplat" type="checkbox">
+        <label for="ltepe">Tepe</label>
+        <input name="tepe" id="ltepe" type="checkbox">
+        <label for="lpresident">President</label>
+        <input name="president" id="lpresident" type="checkbox">
+        <label for="lcuraprox">Curaprox</label>
+        <input name="curaprox" id="lcuraprox" type="checkbox">
+      </div>
+      <div id="sizes-select">
+        <span>Filter by size</span>
+        <label for="ls">S</label>
+        <input name="s" id="ls" type="checkbox">
+        <label for="lm">M</label>
+        <input name="m" id="lm" type="checkbox">
+        <label for="ll">L</label>
+        <input name="l" id="ll" type="checkbox">
+      </div>
+      <div id="colors-select">
+        <span>Filter by color</span>
+        <label for="lblue">Blue</label>
+        <input name="blue" id="lblue" type="checkbox">
+        <label for="lwhite">White</label>
+        <input name="white" id="lwhite" type="checkbox">
+        <label for="lblack">Black</label>
+        <input name="black" id="lback" type="checkbox">
+        <label for="lred">Red</label>
+        <input name="red" id="lred" type="checkbox">
+        <label for="lgrey">Grey</label>
+        <input name="grey" id="lgrey" type="checkbox">
+      </div>
+      <div class="popular-filter">
+        <label class="switch">
+          <span>Show only popluar?</span>
+          <input id="is-popular" type="checkbox">
+        </label>
+      </div>
+    </div>
+    <div class="cart">
+      <p class="cart-count">0</p>
+      <img src="./images/cart.png">
+    </div>
+  </div>
+  <div class='search'>
+    <input id="search" autocomplete="off" type="search" placeholder="search here">
+  </div>
+  <p id="no-items-msg" class="no-items-msg-hide">
+    Sorry we don't have any item under your filter =(
+  </p>
+  <div id="items-container">
+  </div>
+  <footer class="footer">
+    <div><a id='rs-link' href="https://rs.school/" target="_blank">RS School</a></div>
+    <div><a href="https://github.com/SatsunkevichAlex" target="_blank">Author github</a></div>
+    <div><a href="https://rollingscopes.com/" target="_blank">© Rolling Scopes
+        School, 2022</a></div>
+  </footer>
+</body>
+
+</html>
